@@ -1,0 +1,10 @@
+version: "3.6"
+
+services:
+  converter:
+    build: .
+    secrets:
+      - application.properties
+secrets:
+  application.properties:
+    file: ../application.properties
